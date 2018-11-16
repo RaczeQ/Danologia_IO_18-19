@@ -1,0 +1,20 @@
+Grupy 2-osobowe (ewentualnie 1-osobowe).
+Zadanie: Zreprodukowaæ case study z wyk³adu i zbudowaæ zaproponowane na wyk³adzie modele predykcji. Zbiory danych te same co na wyk³adzie (projekt 'Lucene' w dwóch wersjach).
+Nastêpnie spróbowaæ zbudowaæ nowe lub poprawiæ zaproponowane na wyk³adzie modele predykcji defektów oprogramowania. Kryterium oceny modelu bêdzie miara MCC. 
+
+Ka¿da grupa oddaje skrypt, który powinien:
+1) kompilowaæ siê
+2) na wstêpie ustawiaæ seed (set.seed(1)) oraz instalowaæ i ³adowaæ wszystkie niezbêdne pakiety
+2) dzia³aæ nie d³u¿ej ni¿ 5 min na i7 2.9MHz 16MB RAM
+3) raportowaæ MCC oraz Confusion Matrix
+4) zawieraæ b. dok³adnie skomentowane kroki prowadz±ce do uzyskania wyniku (komentarze na poziomie linii kodu, funkcji, zmiennych/struktur danych)
+5) zawieraæ zaznaczone wyra¼nie autorstwo (imiê nazwisko, numer indeksu) poszczególnych funkcji (w tym tak¿e kroków przetwarzania danych, selekcji cech, tuningu modeli etc.) - proszê te¿ w nag³ówku skryptu podsumowaæ (opisowo i procentowo) wk³ad poszczególnych cz³onków zespo³u 
+6) byæ zg³oszony mailem jeden raz, w terminie do 26XI g.20 (~10 dni), przez jedn± osobê z zespo³u (CC do pozosta³ych cz³onków zespo³u), w tytule maila "Danologia" oraz nazwiska cz³onków zespo³u (do zg³oszenia mo¿na te¿ opcjonalnie do³±czyæ plik .txt, lub w przypadku u¿ycia kolorów/grafik .pdf i .tex/.doc, zawieraj±cy bardziej szczegó³owy opis proponowanego rozwi±zania, dochodzenia do niego, porównania konkurencyjnych rozwi±zañ).
+
+Kryteria oceny: 
+1) Ocena ca³ych zajêæ wynika z: 
+- Ocena cz±stkowa O1 (kryterium 1) na podstawie uzyskanej warto¶ci MCC (przy jednolitym seed)
+- Ocena cz±stkowa O2 (kryterium 2) na podstawie kodu (jak bardzo czytelny/czysty/samokomentuj±cy siê jest kod) oraz komentarzy (jak bardzo u³atwia zrozumienie kodu i zaproponowanych rozwi±zañ)
+OCENA=(O1+O2)/2
+2) Osoby nieobecne na zajêciach projektowych uzyskuj± ocenê ndst. 
+3) Zaproponowane rozwi±zania proszê zachowaæ dla siebie - je¶li zostanie wykryte, ¿e jakie¶ rozwi±zanie jest klonem rozwi±zania zaproponowanego przez inn± grupê/osobê (lub stopieñ podobieñstwa jest wysoki) to obie grupy uzyskuj± ocenê ndst. (je¶li nie jest ca³kowicie pewne kto od kogo kopiowa³), ewentualnie tylko grupa, która siê przyzna, ¿e skopiowa³a rozwi±zanie uzyskuje ocenê ndst. [uczulam, ¿e s± dostêpne narzêdzia, by sprawdziæ podobieñstwo kodów ¼ród³owych automatycznie]
