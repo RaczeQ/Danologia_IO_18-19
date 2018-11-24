@@ -58,8 +58,8 @@ rf.lrn$par.vals <- list(ntree = 100L,
 
 # set parameter space
 params <- makeParamSet(
-        makeIntegerParam("mtry", lower = 15, upper = 22),
-        makeIntegerParam("nodesize", lower = 60, upper = 72)
+        makeIntegerParam("mtry", lower = 13, upper = 22),
+        makeIntegerParam("nodesize", lower = 58, upper = 72)
 )
 # Few iterations of tuning:
 
@@ -69,6 +69,7 @@ params <- makeParamSet(
 # mtry = 18     nodesize = 71   mcc train: 0.5754450    mcc test: 0.5712314 <- BEST TEST
 # mtry = 15     nodesize = 75   mcc train: 0.6223846    mcc test: 0.5528764
 # mtry = 21     nodesize = 72   mcc train: 0.6152079    mcc test: 0.5500041
+# mtry = 15     nodesize = 70   mcc train: 0.6181142    mcc test: 0.5664719
 
 # set validation strategy
 rdesc <- makeResampleDesc("CV",iters=5L)
@@ -112,8 +113,8 @@ parallelStop()
 #         ntree = 100L,
 #         importance = TRUE,
 #         cutoff = c(0.75,0.25),
-#         mtry = 18,
-#         nodesize = 71
+#         mtry = 15,
+#         nodesize = 70
 # )
 
 # final.model <- mlr::train(rf.lrn, task = trainTask)
@@ -122,3 +123,11 @@ parallelStop()
 
 # print(perfMeasures)
 # print(mlr::calculateConfusionMatrix(pred))
+
+#       mcc      mmce       acc        f1     kappa
+# 0.5664719 0.2238806 0.7761194 0.7435897 0.5510198
+#         predicted
+# true     FALSE TRUE -err.-
+#   FALSE    242   91     91
+#   TRUE      29  174     29
+#   -err.-    29   91    120
